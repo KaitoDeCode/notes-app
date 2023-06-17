@@ -1,0 +1,118 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root{
+    --color-dark1: #000000;
+    --color-dark2: #3D0000;
+    --color-light1: #FF0000;
+    --color-light2: #950101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p,label{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: var(--color-dark1);
+}
+
+header h1{
+    color: var(--color-light1);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+header .notes-list{
+    margin-top:40px ;
+    color: var(--color-light1);
+    border: 2px solid var(--color-light2);
+    padding: 10px;
+    margin-right: 40px;
+    width: 100%;
+}
+
+.body-content{
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+}
+
+.delete-button{
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: var(--color-dark1);
+    color: var(--color-light1);
+    border: 2px solid var(--color-light1);
+}
+
+.delete-button:hover{
+    color: var(--color-dark1);
+    background-color: var(--color-light1);
+    transition: 0.25s;
+}
+
+.form{
+   margin-bottom: 20px ;
+    text-align: center;
+    padding: 20px;
+    color: var(--color-light1) !important;
+
+}
+.form input::placeholder,
+textarea::placeholder{
+    color: var(--color-light1);
+    font-size: 20px;
+}
+
+.form input[type="date"]{
+    color: var(--color-light1) !important;
+}
+
+.form input,textarea{
+    margin-bottom: 10px;
+    width: 500px;
+    border: 2px solid red;
+}
+
+.form input{
+    height: 30px;
+    background-color: var(--color-dark1);
+}
+
+.form textarea{
+    height: 300px;
+    color: var(--color-light1);
+    background-color: var(--color-dark1);
+}
+
+.form button{
+    width: 100px;
+    height: 35px;
+    background-color: var(--color-dark1);
+    color: var(--color-light1);
+    border: 2px solid var(--color-light1);
+    border-radius: 20px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.form button:hover{
+    background-color: var(--color-light1);
+    color: var(--color-dark1);
+    transition: 0.25s;
+}
+
+.form input::-webkit-calendar-picker-indicator {
+    background-color: var(--color-light1) !important;
+  }
